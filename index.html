@@ -1,12 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    <h1>Home page</h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- Reset -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- GG font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Swiper -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <header class="header fixed">
+            <div class="main-content">
+                <div class="body">
+                    <a href="#!">
+                        <img
+                            src="./assets/image/Logo.svg"
+                            alt=""
+                            class="logo"
+                        />
+                    </a>
+                    <nav class="nav">
+                        <ul>
+                            <li>
+                                <a href="#!">Home</a>
+                            </li>
+                            <li>
+                                <a href="#!">Features</a>
+                            </li>
+                            <li>
+                                <a href="#!">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#!">About</a>
+                            </li>
+                            <li>
+                                <a href="#!">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="action">
+                        <a href="#!" class="nav-btn">Sign in</a>
+                        <a href="#!" class="nav-btn active">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <div class="hero">
+            <div class="main-content">
+                <div class="body">
+                    <div class="hero-content">
+                        <p class="text">😎 EASY LEARNING PLATFORM</p>
+                        <h1 class="heading lv1">Words learner come here.</h1>
+                        <p class="desc">
+                            Build skills with courses, certificates, and get
+                            online knowledge from our world&#8209;class
+                            platform.
+                        </p>
+                        <div class="cta-group">
+                            <a href="#!" class="btn">Get Started</a>
+                            <button class="play">
+                                <img
+                                    src="./assets/image/icons/play.svg"
+                                    alt="Play"
+                                />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-media">
+                        <img
+                            src="./assets/image/lucdao.webp"
+                            alt="Luc dao"
+                            class="img"
+                        />
+                        <div class="course-card">
+                            <img
+                                src="./assets/image/icons/Book.svg"
+                                alt="Book"
+                            />
+                            <p class="label">Courses 1000+</p>
+                        </div>
+
+                        <div class="schedules-card">
+                            <p class="label">Schedules</p>
+                            <img
+                                src="./assets/image/icons/Group 5531.svg"
+                                alt=""
+                                class="level"
+                            /><img
+                                src="./assets/image/icons/Group 5532.svg"
+                                alt=""
+                                class="level"
+                            /><img
+                                src="./assets/image/icons/Group 5533.svg"
+                                alt=""
+                                class="level"
+                            /><img
+                                src="./assets/image/icons/Rectangle 3824.svg"
+                                alt=""
+                                class="level"
+                            />
+                        </div>
+
+                        <div class="students">
+                            <p class="label">Our Active Students</p>
+                            <div class="avatar-block">
+                                <img
+                                    src="./assets/image/avatar.webp"
+                                    alt="Avatar"
+                                    class="avatar"
+                                />
+                                <img
+                                    src="./assets/image/avatar.webp"
+                                    alt="Avatar"
+                                    class="avatar"
+                                />
+                                <img
+                                    src="./assets/image/avatar.webp"
+                                    alt="Avatar"
+                                    class="avatar"
+                                />
+                                <img
+                                    src="./assets/image/avatar.webp"
+                                    alt="Avatar"
+                                    class="avatar"
+                                />
+                                <div class="avatar">
+                                    <span class="label">10K+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="features">
+            <div class="main-content">
+                <div class="content">
+                    <div class="head">
+                        <p class="title">F E A T U R E S</p>
+                        <h2 class="heading lv2">
+                            We are providing suitable features for students.
+                        </h2>
+                        <p class="desc">
+                            Read our awesome feature that is absolutely suit for
+                            you. Explore the feature and know the best.
+                        </p>
+                    </div>
+
+                    <div class="body">
+                        <div class="item">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="102"
+                                height="106"
+                                viewBox="0 0 102 106"
+                                fill="none"
+                            >
+                                <path
+                                    d="M0 18C0 8.05887 8.05888 0 18 0H84C93.9411 0 102 8.05888 102 18V88C102 97.9411 93.9411 106 84 106H18C8.05887 106 0 97.9411 0 88V18Z"
+                                    fill="#FFC147"
+                                />
+                                <path
+                                    d="M51 77V65M51 77H36.6M51 77H65.4M51 65H71C73.2091 65 75 63.2091 75 61V33C75 30.7909 73.2091 29 71 29H31C28.7909 29 27 30.7909 27 33V61C27 63.2091 28.7909 65 31 65H51Z"
+                                    stroke="white"
+                                    stroke-width="4"
+                                    stroke-linecap="round"
+                                />
+                            </svg>
+                            <h3 class="title">Live Class</h3>
+                            <p class="desc line-clamp line-3">
+                                We are providing live classes with the best
+                                teacher for you
+                            </p>
+                        </div>
+                        <div class="item">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="102"
+                                height="106"
+                                viewBox="0 0 102 106"
+                                fill="none"
+                            >
+                                <path
+                                    d="M0 18C0 8.05887 8.05888 0 18 0H84C93.9411 0 102 8.05888 102 18V88C102 97.9411 93.9411 106 84 106H18C8.05887 106 0 97.9411 0 88V18Z"
+                                    fill="#FF947A"
+                                />
+                                <path
+                                    d="M51 77C64.2548 77 75 66.2548 75 53C75 39.7452 64.2548 29 51 29C37.7452 29 27 39.7452 27 53C27 57.3447 28.1545 61.4198 30.1734 64.9352C30.4385 65.3968 30.5311 65.9403 30.4086 66.4584L28.2 75.8L35.5364 72.6573C36.1944 72.3755 36.9491 72.4723 37.5414 72.8741C41.3797 75.4784 46.0121 77 51 77Z"
+                                    stroke="white"
+                                    stroke-width="4"
+                                    stroke-linejoin="round"
+                                />
+                                <circle cx="39" cy="53" r="3" fill="white" />
+                                <circle cx="51" cy="53" r="3" fill="white" />
+                                <circle cx="63" cy="53" r="3" fill="white" />
+                            </svg>
+                            <h3 class="title">Discuss</h3>
+                            <p class="desc line-clamp line-3">
+                                Conversation with teachers or another students
+                                about task or any other thing
+                            </p>
+                        </div>
+                        <div class="item">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="102"
+                                height="106"
+                                viewBox="0 0 102 106"
+                                fill="none"
+                            >
+                                <path
+                                    d="M0 18C0 8.05887 8.05888 0 18 0H84C93.9411 0 102 8.05888 102 18V88C102 97.9411 93.9411 106 84 106H18C8.05887 106 0 97.9411 0 88V18Z"
+                                    fill="#BF83FF"
+                                />
+                                <path
+                                    d="M56.625 29H35C32.7909 29 31 30.7909 31 33V73C31 75.2091 32.7909 77 35 77H67C69.2091 77 71 75.2091 71 73V42.8M56.625 29L71 42.8M56.625 29V40.8C56.625 41.9046 57.5204 42.8 58.625 42.8H71"
+                                    stroke="white"
+                                    stroke-width="3"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            <h3 class="title">Task</h3>
+                            <p class="desc line-clamp line-3">
+                                We give every of our students task for gathering
+                                knowledge at home
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="courses">
+            <div class="main-content">
+                <div class="courses-top">
+                    <p class="title">C O U R S E S</p>
+                    <h2 class="heading lv2">Popular Courses</h2>
+                    <div class="holder">
+                        <p class="desc">
+                            Check out our most poular courses that suit for you.
+                            Here you can find your favorite one.
+                        </p>
+                        <button class="cta">View All Courses</button>
+                    </div>
+                </div>
+
+                <div class="courses-body">
+                    <div class="courses-control">
+                        <button class="course-btn btn-prev">
+                            <img
+                                src="./assets/image/icons/Vector 44.svg"
+                                alt=""
+                            />
+                        </button>
+                        <div><span class="pagination"></span></div>
+
+                        <button class="course-btn btn-next">
+                            <img
+                                src="./assets/image/icons/Vector 45.svg"
+                                alt=""
+                            />
+                        </button>
+                    </div>
+                    <div class="courses-list swiper-wrapper">
+                        <div class="courses-item swiper-slide">
+                            <img
+                                src="./assets/image/thumbimg.webp"
+                                alt=""
+                                class="thumb"
+                            />
+                            <div class="info">
+                                <h3 class="title">Web Design</h3>
+                                <p class="cost">Fee <strong>$200</strong></p>
+                                <p class="desc">
+                                    Web design basic to higer level
+                                </p>
+                                <div class="aside">
+                                    <span>40 Classes</span>
+                                    <span>3 Months</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="courses-item swiper-slide">
+                            <img
+                                src="./assets/image/thumbimg.webp"
+                                alt=""
+                                class="thumb"
+                            />
+                            <div class="info">
+                                <h3 class="title">Web Design</h3>
+                                <p class="cost">Fee <strong>$200</strong></p>
+                                <p class="desc">
+                                    Web design basic to higer level
+                                </p>
+                                <div class="aside">
+                                    <span>40 Classes</span>
+                                    <span>3 Months</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="courses-item swiper-slide">
+                            <img
+                                src="./assets/image/thumbimg.webp"
+                                alt=""
+                                class="thumb"
+                            />
+                            <div class="info">
+                                <h3 class="title">Web Design</h3>
+                                <p class="cost">Fee <strong>$200</strong></p>
+                                <p class="desc">
+                                    Web design basic to higer level
+                                </p>
+                                <div class="aside">
+                                    <span>40 Classes</span>
+                                    <span>3 Months</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="courses-item swiper-slide">
+                            <img
+                                src="./assets/image/thumbimg.webp"
+                                alt=""
+                                class="thumb"
+                            />
+                            <div class="info">
+                                <h3 class="title">Web Design</h3>
+                                <p class="cost">Fee <strong>$200</strong></p>
+                                <p class="desc">
+                                    Web design basic to higer level
+                                </p>
+                                <div class="aside">
+                                    <span>40 Classes</span>
+                                    <span>3 Months</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="courses-item swiper-slide">
+                            <img
+                                src="./assets/image/thumbimg.webp"
+                                alt=""
+                                class="thumb"
+                            />
+                            <div class="info">
+                                <h3 class="title">Web Design</h3>
+                                <p class="cost">Fee <strong>$200</strong></p>
+                                <p class="desc">
+                                    Web design basic to higer level
+                                </p>
+                                <div class="aside">
+                                    <span>40 Classes</span>
+                                    <span>3 Months</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="courses-item swiper-slide">
+                            <img
+                                src="./assets/image/thumbimg.webp"
+                                alt=""
+                                class="thumb"
+                            />
+                            <div class="info">
+                                <h3 class="title">Web Design</h3>
+                                <p class="cost">Fee <strong>$200</strong></p>
+                                <p class="desc">
+                                    Web design basic to higer level
+                                </p>
+                                <div class="aside">
+                                    <span>40 Classes</span>
+                                    <span>3 Months</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="courses-item swiper-slide">
+                            <img
+                                src="./assets/image/thumbimg.webp"
+                                alt=""
+                                class="thumb"
+                            />
+                            <div class="info">
+                                <h3 class="title">Web Design</h3>
+                                <p class="cost">Fee <strong>$200</strong></p>
+                                <p class="desc">
+                                    Web design basic to higer level
+                                </p>
+                                <div class="aside">
+                                    <span>40 Classes</span>
+                                    <span>3 Months</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="courses-item swiper-slide">
+                            <img
+                                src="./assets/image/thumbimg.webp"
+                                alt=""
+                                class="thumb"
+                            />
+                            <div class="info">
+                                <h3 class="title">Web Design</h3>
+                                <p class="cost">Fee <strong>$200</strong></p>
+                                <p class="desc">
+                                    Web design basic to higer level
+                                </p>
+                                <div class="aside">
+                                    <span>40 Classes</span>
+                                    <span>3 Months</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="courses-item swiper-slide">
+                            <img
+                                src="./assets/image/thumbimg.webp"
+                                alt=""
+                                class="thumb"
+                            />
+                            <div class="info">
+                                <h3 class="title">Web Design</h3>
+                                <p class="cost">Fee <strong>$200</strong></p>
+                                <p class="desc">
+                                    Web design basic to higer level
+                                </p>
+                                <div class="aside">
+                                    <span>40 Classes</span>
+                                    <span>3 Months</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thêm Swiper JS từ CDN -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".courses-body", {
+                slidesPerView: 3,
+                spaceBetween: 47,
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: ".btn-next", // Cập nhật với tên class mới
+                    prevEl: ".btn-prev", // Cập nhật với tên class mới
+                },
+                pagination: {
+                    el: ".pagination",
+                    clickable: true,
+                },
+            });
+        </script>
+    </body>
 </html>
