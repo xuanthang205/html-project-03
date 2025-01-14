@@ -1,4 +1,5 @@
 const coursesBody = document.querySelector(".courses-body");
+const coursesList = document.querySelector(".courses-list");
 const viewBtn = document.querySelector(".courses-top .cta");
 const hideBtn = document.querySelector(".courses .hide");
 
@@ -27,6 +28,7 @@ viewBtn.onclick = function () {
     }
     coursesBody.classList.add("show");
     viewBtn.style.display = "none";
+    coursesList.scrollTop = 0;
 };
 
 hideBtn.onclick = function () {
@@ -52,4 +54,5 @@ hideBtn.onclick = function () {
             },
         });
     }
+    coursesList.scrollTop = 0;
 };
