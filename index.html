@@ -263,22 +263,6 @@
                 </div>
 
                 <div class="courses-body">
-                    <div class="courses-control">
-                        <button class="course-btn btn-prev">
-                            <img
-                                src="./assets/image/icons/Vector 44.svg"
-                                alt=""
-                            />
-                        </button>
-                        <div><span class="pagination"></span></div>
-
-                        <button class="course-btn btn-next">
-                            <img
-                                src="./assets/image/icons/Vector 45.svg"
-                                alt=""
-                            />
-                        </button>
-                    </div>
                     <div class="courses-list swiper-wrapper">
                         <div class="courses-item swiper-slide">
                             <img
@@ -443,6 +427,42 @@
                             </div>
                         </div>
                     </div>
+                    <div class="courses-control">
+                        <button class="course-btn btn-prev">
+                            <img
+                                src="./assets/image/icons/Vector 44.svg"
+                                alt=""
+                            />
+                        </button>
+                        <div><span class="pagination"></span></div>
+
+                        <button class="course-btn btn-next">
+                            <img
+                                src="./assets/image/icons/Vector 45.svg"
+                                alt=""
+                            />
+                        </button>
+                    </div>
+                    <button class="hide">Show Less courses</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="countdown">
+            <div class="main-content">
+                <div class="section">
+                    <div class="item">
+                        <h4 class="data">100+</h4>
+                        <p class="desc">Popular Courses</p>
+                    </div>
+                    <div class="item">
+                        <h4 class="data">500+</h4>
+                        <p class="desc">Skilled Trainer</p>
+                    </div>
+                    <div class="item">
+                        <h4 class="data">1M+</h4>
+                        <p class="desc">Student Learning</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -451,11 +471,17 @@
             <div class="main-content"></div>
         </footer>
 
-
         <!-- Thêm Swiper JS từ CDN -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script>
-            var swiper = new Swiper(".courses-body", {
+        <script src="./assets/javascript/showItem.js"></script>
+        <!-- <script>
+            const coursesBody = document.querySelector(".courses-body");
+            const viewBtn = document.querySelector(".courses-top .cta");
+            const hideBtn = document.querySelector(".courses .hide");
+
+            let swiper; // Khai báo swiper ngoài để có thể tái sử dụng
+
+            swiper = new Swiper(".courses-body", {
                 slidesPerView: 3,
                 spaceBetween: 47,
                 loop: true,
@@ -472,7 +498,42 @@
                     clickable: true,
                 },
             });
-        </script>
 
+            
+
+            viewBtn.onclick = function () {
+                if (swiper) {
+                    swiper.destroy(true, true); // Tham số: removeSwiperWrapper và cleanStyles
+                    swiper = null; // Reset lại swiper
+                }
+                coursesBody.classList.add("show");
+                viewBtn.style.display = "none";
+            };
+
+            hideBtn.onclick = function () {
+                coursesBody.classList.remove("show");
+                viewBtn.style.display = "block";
+                if (!swiper) {
+                    // Kiểm tra nếu Swiper chưa được khởi tạo
+                    swiper = new Swiper(".courses-body", {
+                        slidesPerView: 3,
+                        spaceBetween: 47,
+                        loop: true,
+                        autoplay: {
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        },
+                        navigation: {
+                            nextEl: ".btn-next", // Cập nhật với tên class mới
+                            prevEl: ".btn-prev", // Cập nhật với tên class mới
+                        },
+                        pagination: {
+                            el: ".pagination",
+                            clickable: true,
+                        },
+                    });
+                }
+            };
+        </script> -->
     </body>
 </html>

@@ -20,6 +20,21 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f6f4f4;
+    border-radius: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 14px;
+}
+
 /* Common */
 a {
     display: inline-block;
@@ -381,6 +396,7 @@ a {
     line-height: 1.78; /* 177.778% */
 }
 
+.courses-body .hide,
 .courses-top .cta {
     border: none;
     background-color: #fff;
@@ -398,12 +414,12 @@ a {
 }
 
 .courses-body {
-    padding-top: 60px;
+    padding-bottom: 30px;
 }
 
 .courses-list {
     display: flex;
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 .courses-item {
@@ -495,6 +511,7 @@ a {
 }
 
 .courses-control {
+    margin-top: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -502,7 +519,8 @@ a {
 
 .course-btn {
     border: none;
-    background-color: var(--primary-color);cursor: pointer;
+    background-color: var(--primary-color);
+    cursor: pointer;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -513,4 +531,63 @@ a {
 
 .courses .pagination {
     margin: 0 20px;
+}
+
+/* Show item */
+.courses-body.show .courses-list{
+    gap: 47px;
+    flex-wrap: wrap;
+    height: 500px;
+    overflow: auto;
+    overscroll-behavior: none;
+}
+
+.courses-body.show .courses-control {
+    display: none;
+}
+
+.courses .hide {
+    display: none;
+}
+
+.courses-body.show .hide {
+    display: block;
+}
+
+.courses-body .hide {
+    margin-left: auto;
+    margin-top: 25px;
+}
+
+
+/* Countdown */
+.countdown {
+    margin-top: 20px;
+}
+
+.countdown .main-content {
+    width: 862px;
+}
+
+.countdown .section {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.countdown .item {
+    text-align: center;
+}
+
+.countdown .data {
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.countdown .desc {
+    color: #767e7e;
+    font-size: 1.8rem;
+    line-height: normal;
 }
