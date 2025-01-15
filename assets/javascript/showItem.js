@@ -1,5 +1,6 @@
 const coursesBody = document.querySelector(".courses-body");
 const coursesList = document.querySelector(".courses-list");
+const coursesControl = document.querySelector(".courses .control");
 const viewBtn = document.querySelector(".courses-top .cta");
 const hideBtn = document.querySelector(".courses .hide");
 
@@ -28,12 +29,14 @@ viewBtn.onclick = function () {
     }
     coursesBody.classList.add("show");
     viewBtn.style.display = "none";
+    coursesControl.style.display = "none"
     coursesList.scrollTop = 0;
 };
 
 hideBtn.onclick = function () {
     coursesBody.classList.remove("show");
     viewBtn.style.display = "block";
+    coursesControl.style.display = ""
     if (!swiper) {
         // Kiểm tra nếu Swiper chưa được khởi tạo
         swiper = new Swiper(".courses-body", {
@@ -56,3 +59,21 @@ hideBtn.onclick = function () {
     }
     coursesList.scrollTop = 0;
 };
+
+let swiper1 = new Swiper(".testimonial-slide", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".btn-next", // Cập nhật với tên class mới
+        prevEl: ".btn-prev", // Cập nhật với tên class mới
+    },
+    pagination: {
+        el: ".pagination",
+        clickable: true,
+    },
+});
